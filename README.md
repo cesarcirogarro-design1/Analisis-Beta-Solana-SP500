@@ -1,0 +1,1 @@
+# Analisis-Beta-Solana-SP500
