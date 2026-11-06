@@ -10,8 +10,7 @@ Este proyecto audita empíricamente la relación de covarienecia y sensibilidad 
 
 ## ⚙️ Metodología y Especificación del Modelo
 1. **Transformación de Series:** Sincronización cronológica de precios y cálculo de retornos logarítmicos continuos (`SOL_Log` y `SP500_Log`).
-2. **Estimación Econométrica (OLS):** Aplicación de un modelo de Mínimos Cuadrados Ordinarios vía `statsmodels` para evaluar la elasticidad direccional:
-   $$\text{SOL\_Log}_t = \alpha + \beta \cdot \text{SP500\_Log}_t + \varepsilon_t$$
+2. **Estimación Econométrica (OLS):** Aplicación de un modelo de Mínimos Cuadrados Ordinarios vía `statsmodels` para evaluar la elasticidad direccional (Retorno Solana = Alfa + Beta * Retorno S&P 500).
 3. **Control Estadístico:** Análisis riguroso de supuestos (Prueba de Jarque-Bera, Durbin-Watson para autocorrelación y errores estándar robustos).
 
 ## 📊 Hallazgos y Resultados Clave
